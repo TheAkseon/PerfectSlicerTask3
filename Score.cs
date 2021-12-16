@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
         if(other.gameObject.TryGetComponent(out Food food))
         {
             _score += 50;
-            Debug.Log(_score);
+            Debug.Log("Score =" + _score);
             Destroy(other.gameObject);
         }
         Destroy(other.gameObject);
